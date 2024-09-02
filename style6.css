@@ -1,0 +1,133 @@
+body{
+    background-color: #f2f974;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.make-good-box{
+    display: none;
+    cursor: pointer;
+    height: 400px;
+    width: 500px;
+}
+
+.clickMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px;
+    width: 200px; */
+    font-size: 13px;
+    padding: 10px;
+}
+#myAudio{
+    display: none;
+}
+
+.visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.visible .make-good-box {
+    /* background-color: rgb(81, 42, 170); */
+    height: 400px;
+    width: 500px;
+}
+
+.make-good-box img{
+    margin: 20px;
+    height: 400px;
+    width: 500px;
+
+}
+
+.clickbox button{
+    height: 62px;
+    width: 168px;
+    background-color: #facbef;
+    border-radius: 20px;
+    box-shadow: 4px 3px 6px 2px #d377be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    cursor:grab;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+
+.clickbox img{
+    position: relative;
+    top: 50px;
+}
+
+.invisible{
+    display: none;
+}
+.invisible .clickbox{
+    display: none;
+}
+
+ .hope_you_are_better{
+    display: none;
+}
+
+.flip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+.button-cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-cont button{
+    height: 62px;
+    width: 168px;
+    background-color: #facbef;
+    border-radius: 20px;
+    box-shadow: 4px 3px 6px 2px #d377be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor:pointer;
+    outline: none;
+    border: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.button_No:hover{
+    transform: translateX(300px);/* Adjust the translation value as needed */
+}
+.button_No{
+    display: block;
+    cursor: pointer;
+}
+
+.button_No.hidden{
+    display: none;
+}
+
+.toldYou{
+    display: none;
+}
+
+.flip2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}

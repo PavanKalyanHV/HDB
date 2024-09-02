@@ -1,0 +1,56 @@
+.button_container{
+        position: relative;
+}
+
+.button_excited{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #fa94aa;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 6px;
+        box-shadow: 0px 0px 20px 1px rgb(0, 0, 0,0.4);
+        transition: all 0.1s;
+        margin: 10px 10px;
+        align-items: center;
+}
+
+.button_excited:hover{
+        background-color: #f8728f;
+        color: rgb(9,9,9);
+        transform: scale(1.05);
+        padding: 7px;
+    }
+
+.button_notToday{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #fa94aa;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 6px;
+        box-shadow: 0px 0px 20px 1px rgb(0, 0, 0,0.4);
+        transition: transform 0.3s ease-in-out;
+        margin: 10px 10px;
+        align-items: center;
+}
+
+.button_notToday:hover{
+        transform: translateX(50px); /* Adjust the translation value as needed */
+}
+
+

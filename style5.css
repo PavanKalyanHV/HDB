@@ -1,0 +1,274 @@
+body{
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f974;
+  /* margin: auto; */
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  perspective: 1000px;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.front{
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  color: blanchedalmond;
+  /* padding: 20px; */
+  /* border: 2px solid red; */
+}
+
+.front{
+  background-color: rgb(209, 240, 8);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  /* border: 20px solid transparent; */
+  background-color: #61e8eb;
+  border-radius: 20px;
+  border: 17px solid #d9e812;
+  border-inline: 0px;
+  z-index: 2;
+}
+
+.right-side {
+  width: 300px;
+  height: 400px;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  border-radius: 20px;
+  background-color: #facbef;
+  /* padding: 20px; */
+  /* border: 2px solid red; */
+  /* padding: 20px; */
+}
+
+.left-side{
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  color: blanchedalmond;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  /* border: 20px solid transparent; */
+  background-color: #61e8eb;
+  border-radius: 20px;
+  border: 17px solid #d9e812;
+  border-inline: 0px;
+  z-index: 1;
+}
+
+.flipped .left-side{
+  /* border: 2px red solid; */
+  padding: 20px 0px;
+  transform-origin: right;
+  transform: rotateY(180deg);
+  height: 400px;
+  width: 300px;
+  border: 0px solid red;
+  /* margin: 98px 674px; */
+  /* border-inline: 0px; */
+}
+
+.back-image2 {
+  display: none;
+}
+
+.back-image2.flip {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 400px;
+  width: 300px;
+  padding: 20px 2px;
+  background:none;
+  background-color: #61e8eb;
+  border-radius: 20px;
+  color: #f50808;
+  display:block;
+  transform: rotateY(180deg);
+  /* border: 2px solid red; */
+}
+
+.img1{
+  position: absolute;
+  top: 151px;
+  height: 200px;
+  width: 230;
+}
+
+.img2{
+  position: absolute;
+  top: -12px;
+  height: 223px;
+  width: 318px;
+}
+
+.img4{
+  transform: scaleX(-1);
+  position: absolute;
+  top: 87px;
+  right: 37px;
+  height: 334px;
+  width: 237px;
+}
+
+.back-image{
+  display: none;
+}
+
+.right-side {
+  display: none;
+}
+
+.flipped .front {
+  /* border: 2px red solid; */
+  padding: 20px 0px;
+  transform-origin: left;
+  transform: rotateY(-180deg);
+  height: 400px;
+  width: 300px;
+  border: 0px solid red;
+  /* margin: 98px 674px; */
+  /* border-inline: 0px; */
+}
+
+.flipped .right-side{
+  display: block; /* Show the back side when flipped */
+  content: "Happy Birthday!"; /* Display the message on the back side */
+  text-align: center; /* Center the message */
+  padding: 20px 20px; /* Add padding for better spacing */
+};
+
+.right-side{
+/* padding: 20px 2px; */
+background:none;
+background-color: rgb(106, 233, 84);
+border-radius: 2px;
+color: #f50808;
+transform: rotateY(180deg);
+}
+
+.back-image.flip {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 400px;
+  width: 300px;
+  padding: 20px 2px;
+  background:none;
+  background-color: #61e8eb;
+  border-radius: 20px;
+  color: #f50808;
+  display:block;
+  transform: rotateY(180deg);
+  /* border: 2px solid red; */
+}
+
+.back-image body{
+  display: block;
+  margin: auto;
+}
+
+.flipped .card{
+  margin: 98px 674px;
+}
+
+.back-image img{
+  position: absolute;
+  top: 87px;
+  right: 37px;
+  height: 334px;
+  width: 237px;
+}
+
+.bookmark{
+  /* border: 2px solid red; */
+  /* height: 50px; */
+  /* width: 20px; */
+  /* background-color: red; */
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  transform: rotate(90deg);
+  cursor: pointer;
+  margin: 0px;
+  /* align-content: center; */
+  /* flex-wrap: wrap; */
+}
+
+.flipped .bookmark{
+  display: none;
+}
+
+.p1{
+  /* position: relative;
+  left: 34px;
+  top: -200px; */
+  font-size: 82px;
+  margin: auto;
+  position: absolute;
+  top: -31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  /* padding: 17px; */
+}
+
+.p2{
+  transform: rotate(360deg);
+  position: absolute;
+  bottom: 122%;
+  right: -18px;
+  font-size: 15px;
+  /* order:-1; */
+  z-index: 1;
+  font-weight: bold;
+}
+
+.p4{
+  text-align: right;
+  padding: 0px 7px;
+  font-weight: bold;
+}
+
+.p5{
+  text-align: right;
+  padding: 0px 8px;
+  position: relative;
+  top: -10px;
+  right: 5px;
+  font-weight: bold;
+}
+
+.flower-img{
+  position: relative;
+  top: -76px;
+  height: 100px;
+  width: 125px;
+}
+
+.p3{
+  font-size: 11.5px;
+  font-weight: 500;
+}
+
+.flipped .right-side{
+  display: block; /* Show the back side when flipped */
+  content: "Happy Birthday!"; /* Display the message on the back side */
+  text-align: center; /* Center the message */
+  padding: 20px 20px; /* Add padding for better spacing */
+};
